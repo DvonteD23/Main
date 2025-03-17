@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="Portfolio CSS\PortfolioCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+</body>
+<nav id="desktop-nav">
+    <div class="logo">Dvonte Daniels</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Dvonte Daniels</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="togglemenu()">About</a></li>
+            <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+            <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+            <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="profile"> <!--Profile Section Image Text And Contact Button with responsiveness-->
+    <div class="section__pic-container"> <!--Container for Image-->
+        <img src="./Assets/Headshot (Phone).jpg" alt="ProfilePicture" />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hi, I'm</p>
+        <h1 class="title">Dvonte</h1>
+        <p class="section__text__p2">Full-Stack Software Engineer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+        </div>
+        <div id="socials-container"> <!--Container for Socials-->
+            <img src="./Assets/linkedin.png" alt="LinkedIn" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/dvontedaniels/'" />
+            <img src="./Assets/github.png" alt="Github" class="icon"
+                onclick="location.href='https://github.com/DvonteD23'" />
+        </div>
+    </div>
+
+</section>
+<section id="about"> <!--About Me section. Photo and 2 sections detailing experience-->
+    <p class="section__text__p1">About me</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container"> <!--Container for Image-->
+            <img src="./assets/Dvonte side.jpg" alt="Profile Picture" class="about-pic" />
+        </div>
+        <div class="about-details-container"> 
+            <div class="about-container">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Expereince Icon" class="icon" />
+                    <h3>Experience</h3>
+                    <p>6 Months <br>Full-Stack Software Engineer</br></p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education Icon" class="icon" />
+                    <h3>Education</h3>
+                    <p>3 years <br>B.A.A of Marketing at Kent State University</br></p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>Software Engineer with extensive expertise in designing and developing software applications, leveraging strong programming
+                    skills in JavaScript, React, Node, and MongoDB. Demonstrates proficiency in data analysis, strategic planning, and contract
+                    negotiation, with a proven track record in enhancing operational efficiency and driving revenue growth. Passionate about
+                    delivering innovative solutions and maintaining long-term professional relationships, with aspirations to continue advancing in
+                    the tech industry.
+                    </p>
+            </div>
+        </div>
+    </div>
+    <!--Arrow Icon and click event that will link to experience page-->
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+</section>
+
+<section id="experience"> <!--Skill section. Checkmarks and experience are contained within each section-->
+    <p class="section__text__p1">Explore My</p>
+    <h2 class="title">Experience</h2>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h3 class="experience-sub-title">Full Stack Software Engineering</h3>
+                <div class="article-container"> <!--Experience Container with checkmarks and credentials-->
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h4>HTML</h4>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h4>CSS</h4>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h4>JAVASCRIPT</h4>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h4>NODE</h4>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h4>MONGODB</h4>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./Assets/checkmark.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h4>REACT</h4>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+
+</section>
+<section id="projects"> <!--Projects section displaying 3 project screenshots-->
+    <p class="section__text__p1">Recent Projects</p>
+    <h4 class="title">Projects</h4>
+    <div class="experience-details-container">
+        <div class="about-container">
+            <div class="details-container color-container"> <!--Project One-->
+                <div class="article-container">
+                    <img src="./Assets/Calculator.png" alt="project 1" class="project-img" />
+                </div>
+                <h4 class="experience-sub-title project-title">Project One</h4>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live
+                        Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container"> <!--Project two-->
+                <div class="article-container">
+                    <img src="./Assets/Responsive.png" alt="project 2" class="project-img" />
+                </div>
+                <h4 class="experience-sub-title project-title">Project Two</h4>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live
+                        Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container"> <!--Project Three-->
+                <div class="article-container">
+                    <img src="./Assets/Todo.png" alt="project 3" class="project-img" />
+                </div>
+                <h4 class="experience-sub-title project-title">Project Three</h4>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live
+                        Demo</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+<section id="contact"> <!--Contact Information Section-->
+<p class="section__text__p1">Let's Connect</p>
+    <h4 class="title">Contact Me</h4>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./Assets/email.png" class="icon contact-icon">
+                <p><a href="mail">Dvontedaniels216@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./Assets/linkedin.png" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/dvontedaniels/">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+<footer><nav> <!--Footer with Nav Links-->
+    <div class="nav-links-container">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<p>Copyright &#169; 2025 dvonte.io. All Rights Reserved</p>
+</footer>
+
+<script src="PortfolioJS.js"></script>
+
+</html>
